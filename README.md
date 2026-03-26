@@ -1,3 +1,3 @@
-# Jatin-Khanduri
+# Jatin Khanduri
 
-![TryHackMe Stats](https://raw.githubusercontent.com/Jatin-Khanduri/Jatin-Khanduri/main/assets/thm_propic.png)
+![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/JatinKhanduri.png)
