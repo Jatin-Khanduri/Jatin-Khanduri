@@ -11,14 +11,14 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: p4p1/tryhackme-badge-workflow@main
+      - name: Generate Badge
+        uses: p4p1/tryhackme-badge-workflow@main
         with:
           username: 'JatinKhanduri'
-      - name: Force Commit Badge
+      - name: Deploy Badge
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add tryhackme.svg || echo "No svg found"
-          git add assets/thm_propic.png || echo "No png found"
+          git add tryhackme.svg || true
           git commit -m "Update TryHackMe badge" || exit 0
           git push
